@@ -45,6 +45,11 @@ func Resource() *schema.Resource {
 				Computed: true,
 				Elem:     &schema.Schema{Type: schema.TypeString},
 			},
+			"first_name": {
+				Type:     schema.TypeSet,
+				Required: true,
+				ForceNew: true,
+			},
 			// "preferences": {
 			//   "updateUnfocussed": false,
 			//   "enableSmartSearch": true
